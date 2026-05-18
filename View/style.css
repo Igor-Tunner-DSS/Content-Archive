@@ -1,7 +1,42 @@
+@font-face {
+    font-family: HelveticaNow;
+    src: url('../Fonts/HelveticaNowDisplay.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: HelveticaNow;
+    src: url('../Fonts/HelveticaNowDisplayBold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: HelveticaNow;
+    src: url('../Fonts/HelveticaNowDisplayBlack.otf');
+    font-weight: bolder;
+}
+@font-face {
+    font-family: HelveticaNow;
+    src: url('../Fonts/HelveticaNowDisplayBdIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: HelveticaNow;
+    src: url('../Fonts/HelveticaNowDisplayBlkIt.otf');
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: Palatino;
+    src: url('../Fonts/Palatino.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: var(--font-size);
+    font-family: HelveticaNow, Palatino, sans-serif, Georgia;
 }
 
 :root {
@@ -33,7 +68,12 @@
 }
 
 #sidebar {
-    background-color: --sidebar-bg;
+    background-color: var(--sidebar-bg);
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .flex-separate {
